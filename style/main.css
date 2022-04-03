@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;500;700&display=swap');
+
+
 :root {
     --color-lilas1: #542583;
     --color-lilas2: #773E91;
@@ -6,6 +9,8 @@
     --color-dourado2: #E8BF5F;
     --vermelho: #E50914;
     --preto: #141414;
+
+    --font-title: 'Work Sans', sans-serif;
 }
 
 * {
@@ -16,20 +21,20 @@
 
 body {
     background-color: var(--preto);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: var(--font-title);
     color: white;
 }
 
 header .container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 header .logo {
     color: var(--vermelho);
-    font-family: 'Arial Black';
     font-size: 40px;
+    font-weight: 700;
 }
 
 header nav a {
@@ -42,9 +47,14 @@ header nav a:hover{
     color: #fff;
 }
 
+.container {
+    margin: 0px 30px;
+    
+}
+
 .superliga {
-    font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50) 100%), url("../img/superliga.jpeg");
+    font-size: 14px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50) 100%), url("../img/bg-header.jpg");
     height: 400px;
     background-size: cover;
     display: flex;
@@ -54,14 +64,44 @@ header nav a:hover{
 }
 
 .superliga .container {
-    padding: 20px;
+    max-width: 50%;
 }
 
 .superliga .botoes {
     margin-top: 40px;
 }
 
-.titulo {
-    font-size: 35px;
+.superliga .titulo {
+    margin-top: 15%;
+    margin-bottom: 10px;
+    font-size: 30px;
 }
+
+.botao {
+    background-color: rgba(6,120,191,.70);
+    border: none;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 15px 30px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: .2s ease-out;
+}
+
+.botao:hover {
+    color: var(--color-azul);
+    background-color: #fff;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.box-times {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
 
